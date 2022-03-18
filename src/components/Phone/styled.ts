@@ -15,9 +15,7 @@ export const PhoneImgContainer = styled.div<Props>`
   box-shadow: rgb(0 0 0 / 18%) 0px 13px 24px 0px,
     rgb(0 0 0 / 8%) 0px -6px 9px 0px inset;
   border-radius: 48px;
-  position: absolute;
-  top: 220px;
-  left: calc(50% + 170px);
+  position: relative;
 `;
 
 export const PhoneImgWrapper = styled.div<Props>`
@@ -26,10 +24,10 @@ export const PhoneImgWrapper = styled.div<Props>`
   overflow: hidden;
 `;
 
-export const PhoneImgDesignWrapper = styled.div`
-  width: 162px;
+export const PhoneImgDesignWrapper = styled.div<Props>`
+  width: ${(props) => props.width / 2}px;
   height: 38px;
-  left: 84px;
+  left: ${(props) => props.width / 4}px;
   border-radius: 18px;
   position: absolute;
   top: 0px;

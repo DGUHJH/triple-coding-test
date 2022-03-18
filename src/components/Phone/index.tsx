@@ -13,7 +13,7 @@ const Phone: React.FC<Props> = ({ src, width, height }) => {
       <Styled.PhoneImgWrapper width={width} height={height}>
         <CommonImage src={src} width={width - 30} height={height - 30} />
       </Styled.PhoneImgWrapper>
-      <Styled.PhoneImgDesignWrapper />
+      <Styled.PhoneImgDesignWrapper width={width} height={height} />
     </Styled.PhoneImgContainer>
   );
 };
