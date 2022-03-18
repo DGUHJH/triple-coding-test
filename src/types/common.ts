@@ -6,20 +6,7 @@ type MarginType = {
 };
 
 export type FontType = {
-  fontFamily:
-    | 'NotoSansKR-Black'
-    | 'NotoSansKR-Bold'
-    | 'NotoSansKR-Medium'
-    | 'NotoSansKR-Regular'
-    | 'NotoSansKR-Thin'
-    | 'NanumSquareLight'
-    | 'NanumSquare'
-    | 'NanumSquareBold'
-    | 'NanumSquareExtraBold'
-    | 'NanumSquareAcb'
-    | 'NanumSquareAceb'
-    | 'NanumSquareAcl'
-    | 'NanumSquareAcr';
+  fontFamily: 'sans-serif';
   fontSize: number;
   fontWeight?: number;
   color?: string;
@@ -31,7 +18,7 @@ export type FontType = {
 
 export type ImageType = {
   src: string;
-  width: number;
+  width?: number;
   height?: number;
   borderRadius?: number;
   onClick?: () => void;
