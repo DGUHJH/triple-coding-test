@@ -1,4 +1,5 @@
-import MainBannerContainer from 'containers/Main';
+import MainBannerContainer from 'containers/Banner';
+import MainOnceContainer from 'containers/Once';
 import MainResultContainer from 'containers/Result';
 import * as Styled from './styled';
 
@@ -7,6 +8,7 @@ const Main = () => {
     <Styled.Root>
       <MainBannerContainer />
       <MainResultContainer />
+      <MainOnceContainer />
     </Styled.Root>
   );
 };

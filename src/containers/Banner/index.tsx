@@ -1,4 +1,5 @@
 import CommonImage from 'components/Image/Common';
+import Phone from 'components/Phone';
 import CommonTypography from 'components/Typography/Common';
 import * as Styled from './styled';
 
@@ -49,16 +50,11 @@ const MainBannerContainer = () => {
           </CommonTypography>
         </Styled.TypoButton>
       </Styled.TypoContainer>
-      <Styled.PhoneImgContainer>
-        <Styled.PhoneImgWrapper>
-          <CommonImage
-            src="https://triple.guide/intro/images/img_01_screen_3_520@3x.png"
-            width={300}
-            height={650}
-          />
-        </Styled.PhoneImgWrapper>
-        <Styled.PhoneImgDesignWrapper />
-      </Styled.PhoneImgContainer>
+      <Phone
+        src="https://triple.guide/intro/images/img_01_screen_3_520@3x.png"
+        width={330}
+        height={680}
+      />
     </Styled.Root>
   );
 };
