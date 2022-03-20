@@ -50,11 +50,13 @@ const MainBannerContainer = () => {
           </CommonTypography>
         </Styled.TypoButton>
       </Styled.TypoContainer>
-      <Phone
-        src="https://triple.guide/intro/images/img_01_screen_3_520@3x.png"
-        width={330}
-        height={680}
-      />
+      <Styled.PhoneWrapper>
+        <Phone
+          src="https://triple.guide/intro/images/img_01_screen_3_520@3x.png"
+          width={330}
+          height={680}
+        />
+      </Styled.PhoneWrapper>
     </Styled.Root>
   );
 };

@@ -39,3 +39,9 @@ export const TypoButton = styled.div`
   border: 1px #fff solid;
   margin-top: 76px;
 `;
+
+export const PhoneWrapper = styled.div`
+  position: absolute;
+  top: 220px;
+  left: calc(50% + 170px);
+`;
