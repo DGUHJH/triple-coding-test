@@ -23,6 +23,7 @@ export const Root = styled(Typography)<FontType>`
       -webkit-animation: ${props.animationtype ?? 'none'};
       -o-animation: ${props.animationtype ?? 'none'};`}
     word-break: keep-all;
+    transition: ${(props) => props.transition};
     cursor: ${(props) => (props.onClick ? `pointer` : `inherit`)};
   }
 `;

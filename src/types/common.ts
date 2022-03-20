@@ -15,6 +15,7 @@ export type FontType = {
   animationstart?: 'true' | 'false';
   animationtype?: string;
   textDecoration?: string;
+  transition?: string;
 } & MarginType;
 
 export type ImageType = {
@@ -27,6 +28,7 @@ export type ImageType = {
   rotate?: 90 | 180 | 270;
   opacity?: number;
   onClick?: () => void;
+  transition?: string;
 } & MarginType;
 
 export type DividerType = {

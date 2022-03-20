@@ -14,4 +14,5 @@ export const Root = styled.img<ImageType>`
   cursor: ${(props) => (props.onClick ? `pointer` : `default`)};
   background-repeat: no-repeat;
   background-size: 100% 100%;
+  transition: ${(props) => props.transition};
 `;
