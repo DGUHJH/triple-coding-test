@@ -36,6 +36,8 @@ const MainBannerContainer: React.FC<Props> = ({ scrollY }) => {
           fontSize={80}
           color="#fff"
           fontWeight={700}
+          animationstart={'true'}
+          animationtype="fadeIn 300ms"
         >
           여행의 모든 것 <br />
           트리플로 한번에
@@ -45,6 +47,8 @@ const MainBannerContainer: React.FC<Props> = ({ scrollY }) => {
           fontSize={17}
           color="#fff"
           marginTop={18}
+          animationstart={'true'}
+          animationtype="fadeIn 300ms"
         >
           예약부터 일정까지 앱 하나로 간편하게 준비하세요.
         </CommonTypography>

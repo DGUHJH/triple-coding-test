@@ -16,10 +16,12 @@ export const Root = styled(Typography)<FontType>`
     margin-bottom: ${(props) => props.marginBottom ?? 0}px;
     margin-left: ${(props) => props.marginLeft ?? 0}px;
     margin-right: ${(props) => props.marginRight ?? 0}px;
-    animation: ${(props) => props.animation ?? 'none'};
-    -moz-animation: ${(props) => props.animation ?? 'none'};
-    -webkit-animation: ${(props) => props.animation ?? 'none'};
-    -o-animation: ${(props) => props.animation ?? 'none'};
+    ${(props) =>
+      props.animationstart === 'true' &&
+      `animation: ${props.animationtype ?? 'none'};
+      -moz-animation: ${props.animationtype ?? 'none'};
+      -webkit-animation: ${props.animationtype ?? 'none'};
+      -o-animation: ${props.animationtype ?? 'none'};`}
     word-break: keep-all;
     cursor: ${(props) => (props.onClick ? `pointer` : `inherit`)};
   }

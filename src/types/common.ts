@@ -12,7 +12,8 @@ export type FontType = {
   color?: string;
   lineHeight?: string;
   onClick?: () => void;
-  animation?: string;
+  animationstart?: 'true' | 'false';
+  animationtype?: string;
   textDecoration?: string;
 } & MarginType;
 
@@ -21,6 +22,8 @@ export type ImageType = {
   width?: number;
   height?: number;
   borderRadius?: number;
+  animationstart?: 'true' | 'false';
+  animationtype?: string;
   onClick?: () => void;
 } & MarginType;
 
