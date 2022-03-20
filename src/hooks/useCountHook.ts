@@ -7,10 +7,10 @@ const useCountHook = (start: number, end: number, ms: number) => {
     if (count < end) {
       const counter = setTimeout(() => {
         setCount((prev) => prev + 1);
-        if (count === end) {
-          clearTimeout(counter);
-        }
       }, ms);
+      return () => {
+        clearTimeout(counter);
+      };
     }
   }, [count]);
 
