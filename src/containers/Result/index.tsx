@@ -8,14 +8,14 @@ type Props = {
 };
 
 const MainResultContainer: React.FC<Props> = ({ scrollY }) => {
-  const passengerNumber = useCountHook(596, 700, 7);
-  const reviewNumber = useCountHook(80, 100, 15);
-  const scheduleNumber = useCountHook(394, 470, 10);
+  const passengerNumber = useCountHook(0, 700);
+  const reviewNumber = useCountHook(0, 100);
+  const scheduleNumber = useCountHook(0, 470);
 
   return (
     <Styled.Root>
       <Styled.SectionContainer>
-        <Styled.IconImgContainer>
+        <Styled.IconImgContainer isActive={scrollY > 100}>
           <CommonImage
             src="https://triple.guide/intro/images/img-02-triple@3x.png"
             width={400}
@@ -32,58 +32,60 @@ const MainResultContainer: React.FC<Props> = ({ scrollY }) => {
           </Styled.IconImgTypoWrapper>
         </Styled.IconImgContainer>
         <Styled.InfoContainer>
-          <Styled.InfoTypoLineContainer>
-            <CommonTypography
-              fontFamily="sans-serif"
-              fontSize={36}
-              color="#3A3A3A"
-              fontWeight={700}
-            >
-              {passengerNumber}만 명
-            </CommonTypography>
-            <CommonTypography
-              fontFamily="sans-serif"
-              fontSize={36}
-              color="#3A3A3A"
-            >
-              의 여행자
-            </CommonTypography>
-          </Styled.InfoTypoLineContainer>
-          <Styled.InfoTypoLineContainer>
-            <CommonTypography
-              fontFamily="sans-serif"
-              fontSize={36}
-              color="#3A3A3A"
-              fontWeight={700}
-            >
-              {reviewNumber}만 개
-            </CommonTypography>
-            <CommonTypography
-              fontFamily="sans-serif"
-              fontSize={36}
-              color="#3A3A3A"
-            >
-              의 여행 리뷰
-            </CommonTypography>
-          </Styled.InfoTypoLineContainer>
-          <Styled.InfoTypoLineContainer>
-            <CommonTypography
-              fontFamily="sans-serif"
-              fontSize={36}
-              color="#3A3A3A"
-              fontWeight={700}
-            >
-              {scheduleNumber}만 개
-            </CommonTypography>
-            <CommonTypography
-              fontFamily="sans-serif"
-              fontSize={36}
-              color="#3A3A3A"
-            >
-              의 여행 일정
-            </CommonTypography>
-          </Styled.InfoTypoLineContainer>
-          <Styled.InfoAwardContainer>
+          <Styled.InfoTypoContainer isActive={scrollY > 100}>
+            <Styled.InfoTypoLineContainer>
+              <CommonTypography
+                fontFamily="sans-serif"
+                fontSize={36}
+                color="#3A3A3A"
+                fontWeight={700}
+              >
+                {passengerNumber}만 명
+              </CommonTypography>
+              <CommonTypography
+                fontFamily="sans-serif"
+                fontSize={36}
+                color="#3A3A3A"
+              >
+                의 여행자
+              </CommonTypography>
+            </Styled.InfoTypoLineContainer>
+            <Styled.InfoTypoLineContainer>
+              <CommonTypography
+                fontFamily="sans-serif"
+                fontSize={36}
+                color="#3A3A3A"
+                fontWeight={700}
+              >
+                {reviewNumber}만 개
+              </CommonTypography>
+              <CommonTypography
+                fontFamily="sans-serif"
+                fontSize={36}
+                color="#3A3A3A"
+              >
+                의 여행 리뷰
+              </CommonTypography>
+            </Styled.InfoTypoLineContainer>
+            <Styled.InfoTypoLineContainer>
+              <CommonTypography
+                fontFamily="sans-serif"
+                fontSize={36}
+                color="#3A3A3A"
+                fontWeight={700}
+              >
+                {scheduleNumber}만 개
+              </CommonTypography>
+              <CommonTypography
+                fontFamily="sans-serif"
+                fontSize={36}
+                color="#3A3A3A"
+              >
+                의 여행 일정
+              </CommonTypography>
+            </Styled.InfoTypoLineContainer>
+          </Styled.InfoTypoContainer>
+          <Styled.InfoAwardContainer isActive={scrollY > 100}>
             <Styled.InfoItemContainer>
               <CommonImage
                 width={54}
