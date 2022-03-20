@@ -1,5 +1,6 @@
 import MainAnywayContainer from 'containers/Anyway';
 import MainBannerContainer from 'containers/Banner';
+import MainCalcContainer from 'containers/Calc';
 import MainGuideContainer from 'containers/Guide';
 import MainOnceContainer from 'containers/Once';
 import MainResultContainer from 'containers/Result';
@@ -17,6 +18,7 @@ const Main = () => {
       <MainScheduleContainer />
       <MainAnywayContainer />
       <MainReviewContainer />
+      <MainCalcContainer />
     </Styled.Root>
   );
 };
