@@ -1,5 +1,6 @@
 import CommonImage from 'components/Image/Common';
 import CommonTypography from 'components/Typography/Common';
+import useCountHook from 'hooks/useCountHook';
 import * as Styled from './styled';
 
 type Props = {
@@ -7,6 +8,10 @@ type Props = {
 };
 
 const MainResultContainer: React.FC<Props> = ({ scrollY }) => {
+  const passengerNumber = useCountHook(596, 700, 7);
+  const reviewNumber = useCountHook(80, 100, 15);
+  const scheduleNumber = useCountHook(394, 470, 10);
+
   return (
     <Styled.Root>
       <Styled.SectionContainer>
@@ -34,7 +39,7 @@ const MainResultContainer: React.FC<Props> = ({ scrollY }) => {
               color="#3A3A3A"
               fontWeight={700}
             >
-              700만 명
+              {passengerNumber}만 명
             </CommonTypography>
             <CommonTypography
               fontFamily="sans-serif"
@@ -51,7 +56,7 @@ const MainResultContainer: React.FC<Props> = ({ scrollY }) => {
               color="#3A3A3A"
               fontWeight={700}
             >
-              100만 개
+              {reviewNumber}만 개
             </CommonTypography>
             <CommonTypography
               fontFamily="sans-serif"
@@ -68,7 +73,7 @@ const MainResultContainer: React.FC<Props> = ({ scrollY }) => {
               color="#3A3A3A"
               fontWeight={700}
             >
-              470만 개
+              {scheduleNumber}만 개
             </CommonTypography>
             <CommonTypography
               fontFamily="sans-serif"
