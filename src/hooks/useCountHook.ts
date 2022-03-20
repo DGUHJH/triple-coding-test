@@ -5,7 +5,12 @@ const useCountHook = (start: number, end: number, ms: number) => {
 
   useEffect(() => {
     if (count < end) {
-      setTimeout(() => setCount((prev) => prev + 1), ms);
+      const counter = setTimeout(() => {
+        setCount((prev) => prev + 1);
+        if (count === end) {
+          clearTimeout(counter);
+        }
+      }, ms);
     }
   }, [count]);
 
