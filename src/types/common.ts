@@ -24,6 +24,8 @@ export type ImageType = {
   borderRadius?: number;
   animationstart?: 'true' | 'false';
   animationtype?: string;
+  rotate?: 90 | 180 | 270;
+  opacity?: number;
   onClick?: () => void;
 } & MarginType;
 

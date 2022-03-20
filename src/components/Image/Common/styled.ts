@@ -9,6 +9,8 @@ export const Root = styled.img<ImageType>`
   margin-left: ${(props) => props.marginLeft ?? 0}px;
   margin-right: ${(props) => props.marginRight ?? 0}px;
   border-radius: ${(props) => props.borderRadius ?? 0}px;
+  transform: ${(props) => `rotate(${props.rotate}deg)`};
+  opacity: ${(props) => props.opacity};
   cursor: ${(props) => (props.onClick ? `pointer` : `default`)};
   background-repeat: no-repeat;
   background-size: 100% 100%;
