@@ -26,7 +26,7 @@ export const PhoneImgWrapper = styled.div<Props>`
 
 export const PhoneImgDesignWrapper = styled.div<Props>`
   width: ${(props) => props.width / 2}px;
-  height: 38px;
+  height: ${(props) => props.height / 20}px;
   left: ${(props) => props.width / 4}px;
   border-radius: 18px;
   position: absolute;
