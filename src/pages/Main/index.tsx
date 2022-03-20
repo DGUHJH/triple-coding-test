@@ -1,3 +1,4 @@
+import MainAnywayContainer from 'containers/Anyway';
 import MainBannerContainer from 'containers/Banner';
 import MainGuideContainer from 'containers/Guide';
 import MainOnceContainer from 'containers/Once';
@@ -13,6 +14,7 @@ const Main = () => {
       <MainOnceContainer />
       <MainGuideContainer />
       <MainScheduleContainer />
+      <MainAnywayContainer />
     </Styled.Root>
   );
 };
