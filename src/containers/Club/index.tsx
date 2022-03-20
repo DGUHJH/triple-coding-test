@@ -2,7 +2,11 @@ import CommonImage from 'components/Image/Common';
 import CommonTypography from 'components/Typography/Common';
 import * as Styled from './styled';
 
-const MainClubContainer = () => {
+type Props = {
+  scrollY: number;
+};
+
+const MainClubContainer: React.FC<Props> = ({ scrollY }) => {
   return (
     <Styled.Root>
       <Styled.SectionContainer>

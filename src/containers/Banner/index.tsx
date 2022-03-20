@@ -3,7 +3,11 @@ import Phone from 'components/Phone';
 import CommonTypography from 'components/Typography/Common';
 import * as Styled from './styled';
 
-const MainBannerContainer = () => {
+type Props = {
+  scrollY: number;
+};
+
+const MainBannerContainer: React.FC<Props> = ({ scrollY }) => {
   return (
     <Styled.Root>
       <CommonImage

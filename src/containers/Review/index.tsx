@@ -2,7 +2,11 @@ import ReviewImage from 'components/Image/Review';
 import CommonTypography from 'components/Typography/Common';
 import * as Styled from './styled';
 
-const MainReviewContainer = () => {
+type Props = {
+  scrollY: number;
+};
+
+const MainReviewContainer: React.FC<Props> = ({ scrollY }) => {
   return (
     <Styled.Root>
       <Styled.SectionContainer>

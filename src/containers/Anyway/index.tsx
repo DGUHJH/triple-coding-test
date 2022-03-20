@@ -2,7 +2,11 @@ import Phone from 'components/Phone';
 import CommonTypography from 'components/Typography/Common';
 import * as Styled from './styled';
 
-const MainAnywayContainer = () => {
+type Props = {
+  scrollY: number;
+};
+
+const MainAnywayContainer: React.FC<Props> = ({ scrollY }) => {
   return (
     <Styled.Root>
       <Styled.SectionContainer>

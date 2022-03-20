@@ -2,7 +2,11 @@ import CommonImage from 'components/Image/Common';
 import CommonTypography from 'components/Typography/Common';
 import * as Styled from './styled';
 
-const MainGuideContainer = () => {
+type Props = {
+  scrollY: number;
+};
+
+const MainGuideContainer: React.FC<Props> = ({ scrollY }) => {
   return (
     <Styled.Root>
       <Styled.SectionContainer>

@@ -1,7 +1,11 @@
 import CommonTypography from 'components/Typography/Common';
 import * as Styled from './styled';
 
-const MainCalcContainer = () => {
+type Props = {
+  scrollY: number;
+};
+
+const MainCalcContainer: React.FC<Props> = ({ scrollY }) => {
   return (
     <Styled.Root>
       <Styled.SectionContainer>

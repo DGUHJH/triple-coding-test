@@ -32,20 +32,18 @@ const Main = () => {
       setScrollY(window.pageYOffset);
     });
 
-  console.log(scrollY);
-
   return (
     <Styled.Root>
       <Header scrollY={scrollY} />
-      <MainBannerContainer />
-      <MainResultContainer />
-      <MainOnceContainer />
-      <MainGuideContainer />
-      <MainScheduleContainer />
-      <MainAnywayContainer />
-      <MainReviewContainer />
-      <MainCalcContainer />
-      <MainClubContainer />
+      <MainBannerContainer scrollY={scrollY} />
+      <MainResultContainer scrollY={scrollY} />
+      <MainOnceContainer scrollY={scrollY} />
+      <MainGuideContainer scrollY={scrollY} />
+      <MainScheduleContainer scrollY={scrollY} />
+      <MainAnywayContainer scrollY={scrollY} />
+      <MainReviewContainer scrollY={scrollY} />
+      <MainCalcContainer scrollY={scrollY} />
+      <MainClubContainer scrollY={scrollY} />
     </Styled.Root>
   );
 };
