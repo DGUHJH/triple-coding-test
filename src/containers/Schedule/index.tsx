@@ -1,10 +1,10 @@
-import Phone from 'components/Phone';
-import CommonTypography from 'components/Typography/Common';
-import * as Styled from './styled';
+import Phone from 'components/Phone'
+import CommonTypography from 'components/Typography/Common'
+import * as Styled from './styled'
 
 type Props = {
-  scrollY: number;
-};
+  scrollY: number
+}
 
 const MainScheduleContainer: React.FC<Props> = ({ scrollY }) => {
   return (
@@ -64,7 +64,7 @@ const MainScheduleContainer: React.FC<Props> = ({ scrollY }) => {
         </Styled.PhoneContainer>
       </Styled.SectionContainer>
     </Styled.Root>
-  );
-};
+  )
+}
 
-export default MainScheduleContainer;
+export default MainScheduleContainer

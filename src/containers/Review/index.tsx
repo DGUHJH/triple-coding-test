@@ -1,10 +1,10 @@
-import ReviewImage from 'components/Image/Review';
-import CommonTypography from 'components/Typography/Common';
-import * as Styled from './styled';
+import ReviewImage from 'components/Image/Review'
+import CommonTypography from 'components/Typography/Common'
+import * as Styled from './styled'
 
 type Props = {
-  scrollY: number;
-};
+  scrollY: number
+}
 
 const MainReviewContainer: React.FC<Props> = ({ scrollY }) => {
   return (
@@ -65,7 +65,7 @@ const MainReviewContainer: React.FC<Props> = ({ scrollY }) => {
         </Styled.ReviewContainer>
       </Styled.SectionContainer>
     </Styled.Root>
-  );
-};
+  )
+}
 
-export default MainReviewContainer;
+export default MainReviewContainer

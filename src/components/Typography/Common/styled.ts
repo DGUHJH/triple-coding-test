@@ -1,6 +1,6 @@
-import { Typography } from '@mui/material';
-import styled from 'styled-components';
-import { FontType } from 'types/common';
+import { Typography } from '@mui/material'
+import styled from 'styled-components'
+import { FontType } from 'types/common'
 
 export const Root = styled(Typography)<FontType>`
   &&& {
@@ -26,4 +26,4 @@ export const Root = styled(Typography)<FontType>`
     transition: ${(props) => props.transition};
     cursor: ${(props) => (props.onClick ? `pointer` : `inherit`)};
   }
-`;
+`

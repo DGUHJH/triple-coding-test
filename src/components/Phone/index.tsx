@@ -1,11 +1,11 @@
-import CommonImage from 'components/Image/Common';
-import * as Styled from './styled';
+import CommonImage from 'components/Image/Common'
+import * as Styled from './styled'
 
 type Props = {
-  src: string;
-  width: number;
-  height: number;
-};
+  src: string
+  width: number
+  height: number
+}
 
 const Phone: React.FC<Props> = ({ src, width, height }) => {
   return (
@@ -15,7 +15,7 @@ const Phone: React.FC<Props> = ({ src, width, height }) => {
       </Styled.PhoneImgWrapper>
       <Styled.PhoneImgDesignWrapper width={width} height={height} />
     </Styled.PhoneImgContainer>
-  );
-};
+  )
+}
 
-export default Phone;
+export default Phone

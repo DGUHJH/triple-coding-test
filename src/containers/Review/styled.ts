@@ -1,12 +1,12 @@
-import { Container } from '@mui/material';
-import styled from 'styled-components';
+import { Container } from '@mui/material'
+import styled from 'styled-components'
 
 export const Root = styled.div`
   width: 100%;
   height: 1000px;
   background: center center / cover rgb(250, 250, 250);
   overflow: hidden;
-`;
+`
 
 export const SectionContainer = styled(Container)`
   &&& {
@@ -15,19 +15,19 @@ export const SectionContainer = styled(Container)`
     box-sizing: border-box;
     position: relative;
   }
-`;
+`
 
 export const TypoContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 298px;
   gap: 20px;
-`;
+`
 
 type ReviewContainerProps = {
-  top: number;
-  right: number;
-};
+  top: number
+  right: number
+}
 
 export const ReviewContainer = styled.div<ReviewContainerProps>`
   display: flex;
@@ -36,4 +36,4 @@ export const ReviewContainer = styled.div<ReviewContainerProps>`
   position: absolute;
   top: ${(props) => props.top}px;
   right: ${(props) => props.right}px;
-`;
+`

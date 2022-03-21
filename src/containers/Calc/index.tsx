@@ -1,52 +1,52 @@
-import CommonImage from 'components/Image/Common';
-import CommonTypography from 'components/Typography/Common';
-import { useEffect, useState } from 'react';
-import * as Styled from './styled';
+import CommonImage from 'components/Image/Common'
+import CommonTypography from 'components/Typography/Common'
+import { useEffect, useState } from 'react'
+import * as Styled from './styled'
 
 type Props = {
-  scrollY: number;
-};
+  scrollY: number
+}
 
-const label = ['날씨', '환율', '길찾기', '번역', '시차계산'];
+const label = ['날씨', '환율', '길찾기', '번역', '시차계산']
 const imgSrc = [
   'https://triple.guide/intro/images/img-06-card-1@3x.png?20190802',
   'https://triple.guide/intro/images/img-06-card-2@3x.png?20190802',
   'https://triple.guide/intro/images/img-06-card-3@3x.png?20190802',
   'https://triple.guide/intro/images/img-06-card-4@3x.png?20190802',
   'https://triple.guide/intro/images/img-06-card-5@3x.png?20190802',
-];
+]
 
 const MainCalcContainer: React.FC<Props> = ({ scrollY }) => {
-  const [step, setStep] = useState<number>(0);
-  const [prevStep, setPrevStep] = useState<number>(0);
-  const [isChanging, setIsChanging] = useState<boolean>(false);
-  const [arrowType, setArrowType] = useState<'left' | 'right'>('left');
+  const [step, setStep] = useState<number>(0)
+  const [prevStep, setPrevStep] = useState<number>(0)
+  const [isChanging, setIsChanging] = useState<boolean>(false)
+  const [arrowType, setArrowType] = useState<'left' | 'right'>('left')
 
   const onArrowButtonClick = (type: 'left' | 'right') => () => {
     if (type === 'left') {
       if (step !== 0) {
-        setPrevStep(step);
-        setStep((prev) => prev - 1);
-        setArrowType('left');
+        setPrevStep(step)
+        setStep((prev) => prev - 1)
+        setArrowType('left')
       }
     } else {
       if (step !== 4) {
-        setPrevStep(step);
-        setStep((prev) => prev + 1);
-        setArrowType('right');
+        setPrevStep(step)
+        setStep((prev) => prev + 1)
+        setArrowType('right')
       }
     }
-  };
+  }
 
   useEffect(() => {
-    setIsChanging(true);
+    setIsChanging(true)
     const timer = setTimeout(() => {
-      setIsChanging(false);
-    }, 400);
+      setIsChanging(false)
+    }, 400)
     return () => {
-      clearTimeout(timer);
-    };
-  }, [step]);
+      clearTimeout(timer)
+    }
+  }, [step])
 
   return (
     <Styled.Root>
@@ -147,7 +147,7 @@ const MainCalcContainer: React.FC<Props> = ({ scrollY }) => {
         </Styled.CarouselContainer>
       </Styled.SectionContainer>
     </Styled.Root>
-  );
-};
+  )
+}
 
-export default MainCalcContainer;
+export default MainCalcContainer

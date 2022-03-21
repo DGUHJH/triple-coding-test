@@ -1,11 +1,11 @@
-import CommonImage from 'components/Image/Common';
-import Phone from 'components/Phone';
-import CommonTypography from 'components/Typography/Common';
-import * as Styled from './styled';
+import CommonImage from 'components/Image/Common'
+import Phone from 'components/Phone'
+import CommonTypography from 'components/Typography/Common'
+import * as Styled from './styled'
 
 type Props = {
-  scrollY: number;
-};
+  scrollY: number
+}
 
 const MainBannerContainer: React.FC<Props> = ({ scrollY }) => {
   return (
@@ -66,7 +66,7 @@ const MainBannerContainer: React.FC<Props> = ({ scrollY }) => {
         />
       </Styled.PhoneWrapper>
     </Styled.Root>
-  );
-};
+  )
+}
 
-export default MainBannerContainer;
+export default MainBannerContainer

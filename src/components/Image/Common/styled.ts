@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { ImageType } from 'types/common';
+import styled from 'styled-components'
+import { ImageType } from 'types/common'
 
 export const Root = styled.img<ImageType>`
   width: ${(props) => (props.width ? `${props.width}px` : `100%`)};
@@ -15,4 +15,4 @@ export const Root = styled.img<ImageType>`
   background-repeat: no-repeat;
   background-size: 100% 100%;
   transition: ${(props) => props.transition};
-`;
+`

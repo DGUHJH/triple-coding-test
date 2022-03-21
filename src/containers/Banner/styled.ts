@@ -1,11 +1,11 @@
-import { Container } from '@mui/material';
-import styled from 'styled-components';
+import { Container } from '@mui/material'
+import styled from 'styled-components'
 
 export const Root = styled.div`
   width: 100%;
   position: relative;
   overflow: hidden;
-`;
+`
 
 export const HeaderContainer = styled.div`
   width: 100%;
@@ -15,7 +15,7 @@ export const HeaderContainer = styled.div`
   box-sizing: border-box;
   position: absolute;
   top: 0;
-`;
+`
 
 export const TypoContainer = styled(Container)`
   width: 1040px;
@@ -26,7 +26,7 @@ export const TypoContainer = styled(Container)`
   position: absolute;
   top: 220px;
   left: calc(50% - 520px);
-`;
+`
 
 export const TypoButton = styled.div`
   width: 180px;
@@ -38,10 +38,10 @@ export const TypoButton = styled.div`
   border-radius: 25px;
   border: 1px #fff solid;
   margin-top: 76px;
-`;
+`
 
 export const PhoneWrapper = styled.div`
   position: absolute;
   top: 220px;
   left: calc(50% + 170px);
-`;
+`

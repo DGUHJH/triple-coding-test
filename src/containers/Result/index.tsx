@@ -1,16 +1,16 @@
-import CommonImage from 'components/Image/Common';
-import CommonTypography from 'components/Typography/Common';
-import useCountHook from 'hooks/useCountHook';
-import * as Styled from './styled';
+import CommonImage from 'components/Image/Common'
+import CommonTypography from 'components/Typography/Common'
+import useCountHook from 'hooks/useCountHook'
+import * as Styled from './styled'
 
 type Props = {
-  scrollY: number;
-};
+  scrollY: number
+}
 
 const MainResultContainer: React.FC<Props> = ({ scrollY }) => {
-  const passengerNumber = useCountHook(0, 700);
-  const reviewNumber = useCountHook(0, 100);
-  const scheduleNumber = useCountHook(0, 470);
+  const passengerNumber = useCountHook(0, 700)
+  const reviewNumber = useCountHook(0, 100)
+  const scheduleNumber = useCountHook(0, 470)
 
   return (
     <Styled.Root>
@@ -122,7 +122,7 @@ const MainResultContainer: React.FC<Props> = ({ scrollY }) => {
         </Styled.InfoContainer>
       </Styled.SectionContainer>
     </Styled.Root>
-  );
-};
+  )
+}
 
-export default MainResultContainer;
+export default MainResultContainer

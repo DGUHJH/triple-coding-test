@@ -1,10 +1,10 @@
-import CommonImage from 'components/Image/Common';
-import CommonTypography from 'components/Typography/Common';
-import * as Styled from './styled';
+import CommonImage from 'components/Image/Common'
+import CommonTypography from 'components/Typography/Common'
+import * as Styled from './styled'
 
 type Props = {
-  scrollY: number;
-};
+  scrollY: number
+}
 
 const MainGuideContainer: React.FC<Props> = ({ scrollY }) => {
   return (
@@ -125,7 +125,7 @@ const MainGuideContainer: React.FC<Props> = ({ scrollY }) => {
         </Styled.ImgWrapper>
       </Styled.SectionContainer>
     </Styled.Root>
-  );
-};
+  )
+}
 
-export default MainGuideContainer;
+export default MainGuideContainer

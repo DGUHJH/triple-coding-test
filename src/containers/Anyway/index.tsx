@@ -1,10 +1,10 @@
-import Phone from 'components/Phone';
-import CommonTypography from 'components/Typography/Common';
-import * as Styled from './styled';
+import Phone from 'components/Phone'
+import CommonTypography from 'components/Typography/Common'
+import * as Styled from './styled'
 
 type Props = {
-  scrollY: number;
-};
+  scrollY: number
+}
 
 const MainAnywayContainer: React.FC<Props> = ({ scrollY }) => {
   return (
@@ -49,7 +49,7 @@ const MainAnywayContainer: React.FC<Props> = ({ scrollY }) => {
         </Styled.PhoneContainer>
       </Styled.SectionContainer>
     </Styled.Root>
-  );
-};
+  )
+}
 
-export default MainAnywayContainer;
+export default MainAnywayContainer

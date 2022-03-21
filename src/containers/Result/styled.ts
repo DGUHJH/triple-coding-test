@@ -1,12 +1,12 @@
-import { Container } from '@mui/material';
-import styled from 'styled-components';
+import { Container } from '@mui/material'
+import styled from 'styled-components'
 
 export const Root = styled.div`
   width: 100%;
   height: 551px;
   position: relative;
   overflow: hidden;
-`;
+`
 
 export const SectionContainer = styled(Container)`
   &&& {
@@ -15,11 +15,11 @@ export const SectionContainer = styled(Container)`
     padding-top: 150px;
     box-sizing: border-box;
   }
-`;
+`
 
 type IconImgContainerProps = {
-  isActive: boolean;
-};
+  isActive: boolean
+}
 
 export const IconImgContainer = styled.div<IconImgContainerProps>`
   width: 400px;
@@ -35,12 +35,12 @@ export const IconImgContainer = styled.div<IconImgContainerProps>`
     `opacity: 1;
   transform: translateY(0%);
   transition: all 700ms ease-in-out 0s;`}
-`;
+`
 
 export const IconImgTypoWrapper = styled.div`
   position: absolute;
   top: 285px;
-`;
+`
 
 export const InfoContainer = styled.div`
   width: 517px;
@@ -48,11 +48,11 @@ export const InfoContainer = styled.div`
   flex-direction: column;
   margin-left: 200px;
   transform: translateY(10%);
-`;
+`
 
 type InfoTypoContainerProps = {
-  isActive: boolean;
-};
+  isActive: boolean
+}
 
 export const InfoTypoContainer = styled.div<InfoTypoContainerProps>`
   display: flex;
@@ -65,17 +65,17 @@ export const InfoTypoContainer = styled.div<InfoTypoContainerProps>`
   transform: translateY(0%);
   transition: all 700ms ease-in-out 0s;
   transition-delay: 100ms;`}
-`;
+`
 
 export const InfoTypoLineContainer = styled.div`
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-`;
+`
 
 type InfoAwardContainerProps = {
-  isActive: boolean;
-};
+  isActive: boolean
+}
 
 export const InfoAwardContainer = styled.div<InfoAwardContainerProps>`
   display: flex;
@@ -89,11 +89,11 @@ export const InfoAwardContainer = styled.div<InfoAwardContainerProps>`
   transform: translateY(0%);
   transition: all 700ms ease-in-out 0s;
   transition-delay: 200ms;`}
-`;
+`
 
 export const InfoItemContainer = styled.div`
   width: 200px;
   display: flex;
   align-items: center;
   margin-right: 39px;
-`;
+`

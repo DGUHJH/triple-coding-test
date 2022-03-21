@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 type RootProps = {
-  scrollY: number;
-};
+  scrollY: number
+}
 
 export const Root = styled.div<RootProps>`
   width: 100%;
@@ -21,7 +21,7 @@ export const Root = styled.div<RootProps>`
   transform: ${(props) =>
     props.scrollY > 100 ? `translateY(0)` : `translateY(-100%)`};
   opacity: ${(props) => (props.scrollY > 100 ? `1` : `0`)};
-`;
+`
 
 export const LogoWrapper = styled.div`
   width: 84px;
@@ -29,4 +29,4 @@ export const LogoWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
+`

@@ -1,5 +1,5 @@
-import styled from 'styled-components';
-import { DividerType } from 'types/common';
+import styled from 'styled-components'
+import { DividerType } from 'types/common'
 
 export const Root = styled.div<DividerType>`
   width: ${(props) => props.width}px;
@@ -9,4 +9,4 @@ export const Root = styled.div<DividerType>`
   margin-bottom: ${(props) => props.marginBottom ?? 0}px;
   margin-left: ${(props) => props.marginLeft ?? 0}px;
   margin-right: ${(props) => props.marginRight ?? 0}px;
-`;
+`

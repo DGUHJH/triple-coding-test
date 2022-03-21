@@ -1,10 +1,10 @@
-import CommonImage from 'components/Image/Common';
-import CommonTypography from 'components/Typography/Common';
-import * as Styled from './styled';
+import CommonImage from 'components/Image/Common'
+import CommonTypography from 'components/Typography/Common'
+import * as Styled from './styled'
 
 type Props = {
-  scrollY: number;
-};
+  scrollY: number
+}
 
 const MainClubContainer: React.FC<Props> = ({ scrollY }) => {
   return (
@@ -69,7 +69,7 @@ const MainClubContainer: React.FC<Props> = ({ scrollY }) => {
         </a>
       </Styled.SectionContainer>
     </Styled.Root>
-  );
-};
+  )
+}
 
-export default MainClubContainer;
+export default MainClubContainer
